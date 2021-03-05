@@ -58,9 +58,41 @@ article p {
   margin: 2% 0;
   font-size: 110%;
 }
+.define {
+  color: rgb(0, 89, 255);
+  text-decoration: underline;
+}
+
+.define:hover {
+  cursor:pointer;
+}
 
 /* TODO: Style the keyword - underline, black text, grab cursor */
+.define-css:hover::after {
+display: inline-block;
+content: "Known as (Cascading Style Sheets)";
+font-size: 12px;
+color:#b9c6ae;
+background-color: #13293d;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(153, 151, 151);
+position: absolute;
+transform: translatey(-10px);
+}
 
+.define-html:hover::after {
+display: inline-block;
+content: "Known as (HyperText Markup Language)";
+font-size: 12px;
+color: #b9c6ae;
+background-color: #13293d;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(153, 151, 151);
+position: absolute;
+transform: translatey(-10px);
+}
 /* TODO: Position tooltip above the keyword, same color as header and nav links, no border-radius, smaller font size */
 
 aside {
