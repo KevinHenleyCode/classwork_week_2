@@ -202,8 +202,22 @@ footer {
     width: 75%;
   }
 
+  :root{
+    --outer-space: #00272B;
+    --bright-turquoise: #A51080;
+    --gin: #FF6663;
+    --heliotrope: #E0FF4F;
+  }
+
   .card-column {
     flex: 0 0 33.333%;
     max-width: 33.333%;
+  }
+
+  .code-card pre {
+  background-image: linear-gradient(
+    rgba(7, 92, 71, 0.795) 0%,
+    rgba(73, 35, 73, 0.6) 100%
+  );
   }
 }
